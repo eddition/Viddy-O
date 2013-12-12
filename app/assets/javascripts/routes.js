@@ -4,6 +4,7 @@
       },
       initialize: function(){
         Backbone.history.start();
+
       },
       index: function(){
         console.log('index');
