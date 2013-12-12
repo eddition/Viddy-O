@@ -1,12 +1,16 @@
     App.Router = Backbone.Router.extend({
       routes: {
-        ""  : "index"
+        ""                 : "index",
+        "compilations/:id" : "show"
       },
       initialize: function(){
-        Backbone.history.start();
-
+        Backbone.history.start({pushState: true});
+        App.main = new App.Views.Main();
       },
       index: function(){
         console.log('index');
+      },
+      show: function(){
+        console.log('show')
       }
     });

@@ -7,6 +7,6 @@ $(document).ready(function(){
 });
 
 function searchInstagram() {
-  hashtag = $("#search-input").val();
-  console.log(hashtag)
+  var hashtag = $("#search-input").val();
+  console.log(hashtag);
 }
