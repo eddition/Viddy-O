@@ -1,15 +1,15 @@
 App.Views.Main = Backbone.View.extend({
-  el: "#videos",
+
+  el: '#videos',
+
   events: {
-    "click #search-button" : "showVideos"
-    // "click #signup_button"  : "showSignup",
-    // "click #login_button"   : "showLogin",
+    'click #search-button' : 'showVideos'
   },
   initialize: function(){
     console.log('view loaded');
   },
   showVideos: function() {
-    console.log("videos show");
-
+    console.log('searched videos');
   }
+
 });
