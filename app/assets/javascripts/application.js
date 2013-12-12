@@ -20,9 +20,5 @@
 //
 //= require setup
 //= require routes
-//= require_tree ./templates
-//= require_tree ./models
-//= require_tree ./controllers
-//= require_tree ./views
 //
 //= require app
