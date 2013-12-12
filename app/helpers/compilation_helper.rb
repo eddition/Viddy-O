@@ -1,0 +1,2 @@
+module CompilationHelper
+end

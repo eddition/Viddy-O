@@ -1,4 +1,5 @@
-class WelcomeController < ApplicationController
+class CompilationsController < ApplicationController
+
   def index
   end
 
@@ -6,6 +7,9 @@ class WelcomeController < ApplicationController
   end
 
   def create
+    @compilation = Compilation.create
+
+    redirect_to @compilation
   end
 
   def show
