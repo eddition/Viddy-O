@@ -20,5 +20,12 @@
 //
 //= require setup
 //= require routes
+<<<<<<< HEAD
+=======
+//= require_tree ./collections
+//= require_tree ./models
+//= require_tree ./controllers
+//= require_tree ./views
+>>>>>>> f115613b9b293619aa95a2edfe3683aefe6908e9
 //
 //= require app

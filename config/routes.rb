@@ -2,6 +2,8 @@ ViddyO::Application.routes.draw do
   root to: 'welcome#index'
 
   get "welcome/index"
+  resources :videos
+  resources :compilations
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
