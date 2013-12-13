@@ -25,4 +25,5 @@
 //= require_tree ./controllers
 //= require_tree ./views
 //
+//= require jqueryui
 //= require app
