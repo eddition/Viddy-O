@@ -1,5 +1,12 @@
 var Videos = Backbone.Collection.extend({
 
+  sync: function(){
+    var params = _.extend({
+      type:       'GET',
+      dataType:   'jsonp'
+    });
+  },
+
   model: Video,
 
   url: function() {

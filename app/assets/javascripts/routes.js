@@ -5,15 +5,13 @@ App.Router = Backbone.Router.extend({
   },
   initialize: function(){
     Backbone.history.start({ pushState: true });
+
   },
   index: function(){
     console.log('index');
   },
   show: function(){
     console.log('show');
-    var hashtag = $('#search-input').val();
-    this.collections = new Videos({hashtag: hasg})
-    console.log(hashtag)
+    App.main = new App.Views.Main();
   }
 });
-
