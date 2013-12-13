@@ -18,7 +18,6 @@ App.Views.Main = Backbone.View.extend({
     // videos.models[0].get('hashtag')
     // debugger;
     console.log(videos);
-
   }
 
 });
