@@ -14,10 +14,10 @@ App.Views.Main = Backbone.View.extend({
     //get the user input
     var hashtag = $('#search-input').val();
     // add video model
-    var videos = new Videos( {hashtag: hashtag} );
+    var videosCollection = new Videos( {hashtag: hashtag} );
     // videos.models[0].get('hashtag')
-    // debugger;
-    console.log(videos);
+    debugger;
+    console.log(videosCollection);
   }
 
 });
