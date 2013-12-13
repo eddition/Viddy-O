@@ -5,10 +5,14 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Euphoria+Script|Parisienne|Gloria+Hallelujah|Amatic+SC' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="row" id="header-div">
+    <div class="col-md-2">
+      <h1 id="app-name">Viddy-O</h1>
+    </div>
+  </div>
+  <%= yield %>
 </body>
 </html>
