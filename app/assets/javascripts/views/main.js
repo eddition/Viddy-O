@@ -10,6 +10,7 @@ App.Views.Main = Backbone.View.extend({
   },
   showVideos: function() {
     console.log('searched videos');
+
     //get the user input
     var hashtag = $('#search-input').val();
     // add video model
@@ -17,6 +18,7 @@ App.Views.Main = Backbone.View.extend({
     // videos.models[0].get('hashtag')
     // debugger;
     console.log(videos);
+
   }
 
 });

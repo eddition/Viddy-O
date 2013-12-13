@@ -11,7 +11,9 @@ App.Router = Backbone.Router.extend({
   },
   show: function(){
     console.log('show');
-    App.main = new App.Views.Main();
+    var hashtag = $('#search-input').val();
+    this.collections = new Videos({hashtag: hasg})
+    console.log(hashtag)
   }
 });
 
