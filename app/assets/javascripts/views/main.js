@@ -36,8 +36,9 @@ App.Views.Main = Backbone.View.extend({
     //   <source src="movie.ogg" type="video/ogg">
     // Your browser does not support the video tag.
     // </video>
-    var url = video.attributes.videos.standard_resolution.url
+    var url = video.attributes.videos.standard_resolution.url;
     $('#videos').append('<video width="320" height="240" controls><source src="' + url + '" type="video/mp4"></video>');
+    $('#video-sequence').append('<div class="sequence"></div>');
   }
 
 });
