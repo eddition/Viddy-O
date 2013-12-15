@@ -40,13 +40,15 @@ App.Views.Main = Backbone.View.extend({
     // <li class="ui-widget-content ui-corner-tr">
     // <h5 class="ui-widget-header">High Tatras</h5>
     // <img src="http://www.underconsideration.com/brandnew/archives/google_broken_image_06_bliss.gif" alt="The peaks of High Tatras" width="96" height="72">
+    // <a href="images/high_tatras.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
     // <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Sequence It</a>
     // </li>
 
-
-    var url = video.attributes.videos.standard_resolution.url;
+    // debugger;
+    var imageUrl = video.attributes.images.standard_resolution.url;
+    var videoUrl = video.attributes.videos.standard_resolution.url;
     //'<video width="320" height="240" controls><source src="' + url + '" type="video/mp4"></video>'
-    $('#gallery').append('<li class="ui-widget-content ui-corner-tr"><h5 class="ui-widget-header">High Tatras</h5><video width="96" height="72" controls><source src="' + url + '" type="video/mp4"></video><a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Sequence It</a></li>');
+    $('#gallery').append('<li video link="' + videoUrl + '"class="ui-widget-content ui-corner-tr"><img src="' + imageUrl + '" alt="The peaks of High Tatras" width="96" height="72"><a href="' + imageUrl  + '" title="View larger image" class="ui-icon ui-icon-zoomin">Preview</a><a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Sequence It</a></li>');
 
     //add the functionality of the dynamic adding
       $(function() {
