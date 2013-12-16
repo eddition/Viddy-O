@@ -4,8 +4,8 @@
 
 main video player should be loaded and on click of preview, it auto plays the video
 
-clear input form after submission
-
-Write a function to check if the video is already on the page
+~~clear input form after submission~~
 
 ~~fix up the doubling up~~
+
+fix name double ups/names

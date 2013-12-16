@@ -15,6 +15,8 @@ App.Views.Main = Backbone.View.extend({
 
     //get the user input
     var hashtag = $('#search-input').val();
+    //clear the form after submission
+    $('#search-input').val('');
     // add video collection
     this.collection = new Videos( {hashtag: hashtag} );
 
@@ -60,3 +62,6 @@ App.Views.Main = Backbone.View.extend({
   }
 
 });
+
+
+
