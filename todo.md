@@ -1,4 +1,4 @@
-add function: add jqueri UI instead of having it in renderVideo
+~~add function: add jqueri UI instead of having it in renderVideo~~
 
 Show video should pass in the name of the hashtag
 
