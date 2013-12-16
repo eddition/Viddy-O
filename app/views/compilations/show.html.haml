@@ -1,8 +1,7 @@
-#main.main.row
+#main.main
   %form#search
     %input#search-input{:placeholder => "search hashtags", :name => "search"}
     %button#search-button search
-  %div.row
     #video-player-div
       %video.video-player{width: "320", height:"240", controls: true}
         %source.video-source{src: "", type: "video/mp4"}
@@ -13,7 +12,7 @@
 
   #trash.ui-widget-content.ui-state-default
     %h4#sequence.ui-widget-header Sequence
-
+    %button#seq-button click this bitch!
 
     / <li class="ui-widget-content ui-corner-tr">
     / /<h5 class="ui-widget-header">High Tatras</h5>
