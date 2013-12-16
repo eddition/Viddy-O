@@ -9,3 +9,5 @@ main video player should be loaded and on click of preview, it auto plays the vi
 ~~fix up the doubling up~~
 
 fix name double ups/names
+
+write basic tests with capybara
