@@ -8,6 +8,8 @@
 
 ~~fix up the doubling up~~
 
+make sequence play
+
 fix name double ups/names
 
 write basic tests with capybara
