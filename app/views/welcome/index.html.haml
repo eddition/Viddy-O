@@ -1,6 +1,10 @@
+%div.col-sm-2
+%div.col-sm-8
 %h3 What is Viddy-O?
-%p Viddy-O is a web app that allows users to search videos by hash tags and "stitch" them together and view the videos as one compiled video. Collaborate with friends to create video projects and share them with the world!
+%p#viddy-description Viddy-O is a web app that allows users to search videos by hash tags and "stitch" them together and view the videos as one compiled video. Collaborate with friends to create video projects and share them with the world!
 
-= form_for :compilation, :url => {:controller => 'compilations', :action => 'create'}, :html => {:class => "create-compilation-form"} do |f|
-  = f.submit 'create a new compilation',:class => 'create-compilation-button'
+%div.col-md-2
+%div.col-md-8
+  = form_for :compilation, :url => {:controller => 'compilations', :action => 'create'}, :html => {:class => "create-compilation-form"} do |f|
+    = f.submit 'create a new compilation',:class => 'btn create-compilation-button', :id => 'compilation-button'
 
