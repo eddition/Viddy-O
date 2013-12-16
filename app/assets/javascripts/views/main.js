@@ -3,12 +3,14 @@ App.Views.Main = Backbone.View.extend({
   el: '#main',
 
   events: {
-    'click #search-button' : 'findVideos'
+    'submit #search' : 'findVideos'
   },
   initialize: function() {
     console.log('view loaded');
   },
-  findVideos: function() {
+  findVideos: function(e) {
+
+    e.preventDefault();
     console.log('searched videos');
 
     //get the user input
@@ -30,6 +32,7 @@ App.Views.Main = Backbone.View.extend({
     }
   },
   renderVideo: function(video) {
+
     console.log(video);
     // <video width="320" height="240" controls>
     //   <source src="movie.mp4" type="video/mp4">
