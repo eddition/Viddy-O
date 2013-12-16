@@ -13,5 +13,8 @@
 require 'spec_helper'
 
 describe User do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "cannot create a user without a name"
+  it "cannot create a user without an email"
+  it "cannot create a user with the same email"
+  it "will ensure that password and password confirmation are matching"
 end
