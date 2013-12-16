@@ -44,8 +44,8 @@ App.Views.Main = Backbone.View.extend({
 
   renderVideo: function(video, hashtag) {
 
-    console.log(video);
-    console.log(hashtag);
+    // console.log(video);
+    // console.log(hashtag);
 
     // <li class="ui-widget-content ui-corner-tr">
     // <h5 class="ui-widget-header">High Tatras</h5>

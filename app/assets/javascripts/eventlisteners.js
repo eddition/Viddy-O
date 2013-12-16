@@ -15,6 +15,6 @@ function playPreivew(e){
 }
 
 function playSeq(){
-  var videos = $('#sequence-videos')[0].children
+  var videos = $('#sequence-videos')[0].children;
   debugger;
 }

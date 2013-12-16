@@ -39,7 +39,7 @@ function jQueryUi() {
           $item.fadeOut(function() {
             var $list = $( "ul", $trash ).length ?
               $( "ul", $trash ) :
-              $( "<ul class='gallery ui-helper-reset'/>" ).appendTo( $trash );
+              $( "<ul class='gallery ui-helper-reset' id='sequence-videos'/>" ).appendTo( $trash );
 
             $item.find( "a.ui-icon-trash" ).remove();
             $item.append( recycle_icon ).appendTo( $list ).fadeIn(function() {
