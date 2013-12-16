@@ -11,5 +11,12 @@
 require 'spec_helper'
 
 describe Compilation do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "invalid without a user_id" do
+    compilation = Compilation.new
+    expect(compilation).to_not be_valid
+  end
+  it "is valid when user_id is present" do
+    compilation = Compilation.new(user_id: 1)
+    expect(compilation).to be_true
+  end
 end

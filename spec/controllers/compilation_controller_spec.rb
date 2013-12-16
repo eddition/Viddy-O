@@ -1,5 +1,5 @@
 require 'spec_helper'
 
-  describe CompilationController do
+  describe CompilationsController do
 
 end
