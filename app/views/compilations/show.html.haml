@@ -1,15 +1,19 @@
-#main.main
+#main.main.row
   %form#search
     %input#search-input{:placeholder => "search hashtags", :name => "search"}
     %button#search-button search
+  %div.row
+    #video-player-div
+      %video.video-player{width: "320", height:"240", controls: true}
+        %source.video-source{src: "", type: "video/mp4"}
 
-  #video-player-div
-    %video.video-player{width: "320", height:"240", controls: true}
-      %source.video-source{src: "", type: "video/mp4"}
+    #search-div.ui-widget.ui-helper-clearfix
+      %h4 Searched Videos
+      %ul#gallery.gallery.ui-helper-reset.ui-helper-clearfix
 
-.ui-widget.ui-helper-clearfix
-  %h4 Searched Videos
-  %ul#gallery.gallery.ui-helper-reset.ui-helper-clearfix
+  #trash.ui-widget-content.ui-state-default
+    %h4#sequence.ui-widget-header Sequence
+
 
     / <li class="ui-widget-content ui-corner-tr">
     / /<h5 class="ui-widget-header">High Tatras</h5>
@@ -19,8 +23,6 @@
     / <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Sequence It</a>
     / </li>
 
-#trash.ui-widget-content.ui-state-default
-  %h4.ui-widget-header Sequence
 
 
 
