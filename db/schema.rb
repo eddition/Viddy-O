@@ -29,8 +29,8 @@ ActiveRecord::Schema.define(:version => 20131212171043) do
 
   create_table "videos", :force => true do |t|
     t.integer  "compilation_id"
+    t.integer  "seq_id"
     t.string   "video_url"
-    t.string   "seq_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
