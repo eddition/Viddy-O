@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/config/environments/test.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/config/environments/test.rb": [
         1,
         null,
         null,
@@ -40,7 +40,7 @@
         1,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/config/initializers/backtrace_silencers.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -49,7 +49,7 @@
         null,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/config/initializers/inflections.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -66,7 +66,7 @@
         null,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/config/initializers/instagram.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/config/initializers/instagram.rb": [
         1,
         null,
         1,
@@ -74,14 +74,14 @@
         1,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/config/initializers/mime_types.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/config/initializers/secret_token.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -90,7 +90,7 @@
         null,
         1
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/config/initializers/session_store.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -100,7 +100,7 @@
         null,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/config/initializers/wrap_parameters.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -116,20 +116,20 @@
         1,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/app/controllers/application_controller.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/app/helpers/application_helper.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/app/helpers/compilation_helper.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/app/helpers/compilation_helper.rb": [
         1,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/app/controllers/compilations_controller.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/app/controllers/compilations_controller.rb": [
         1,
         null,
         1,
@@ -141,7 +141,7 @@
         1,
         4,
         null,
-        4,
+        0,
         null,
         null,
         1,
@@ -157,7 +157,7 @@
         null,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/app/models/compilation.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/app/models/compilation.rb": [
         null,
         null,
         null,
@@ -177,19 +177,19 @@
         1,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/app/controllers/users_controller.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/app/controllers/users_controller.rb": [
 
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/app/controllers/videos_controller.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/app/controllers/videos_controller.rb": [
 
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/app/controllers/welcome_controller.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/app/controllers/welcome_controller.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/app/models/user.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/app/models/user.rb": [
         null,
         null,
         null,
@@ -208,7 +208,7 @@
         1,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/app/models/video.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/app/models/video.rb": [
         null,
         null,
         null,
@@ -230,7 +230,7 @@
         1,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/config/routes.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/config/routes.rb": [
         1,
         1,
         null,
@@ -296,7 +296,7 @@
         null,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/spec/support/database_cleaner.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/spec/support/database_cleaner.rb": [
         1,
         null,
         1,
@@ -321,7 +321,7 @@
         null,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/spec/features/welcome_spec.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/spec/features/welcome_spec.rb": [
         1,
         null,
         null,
@@ -366,11 +366,11 @@
         null,
         1,
         1,
-        1,
+        0,
         null,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/spec/helpers/compilation_helper_spec.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/spec/helpers/compilation_helper_spec.rb": [
         1,
         null,
         null,
@@ -383,57 +383,57 @@
         null,
         null,
         null,
-        1,
-        1,
-        null
-      ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/spec/models/compilation_spec.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/spec/models/user_spec.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
         1,
         1,
         null
       ],
-      "/Users/EddieShin/ga_wdi/projects/viddy_o/Viddy-O/spec/models/video_spec.rb": [
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/spec/models/compilation_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/spec/models/user_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Hint/ga_wdi/projects/third_project/Viddy-O/spec/models/video_spec.rb": [
         null,
         null,
         null,
@@ -467,6 +467,6 @@
         null
       ]
     },
-    "timestamp": 1387220978
+    "timestamp": 1387221660
   }
 }
