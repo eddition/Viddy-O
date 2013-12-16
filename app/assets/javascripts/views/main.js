@@ -5,9 +5,11 @@ App.Views.Main = Backbone.View.extend({
   events: {
     'submit #search' : 'findVideos'
   },
+
   initialize: function() {
     console.log('view loaded');
   },
+
   findVideos: function(e) {
 
     e.preventDefault();
@@ -22,6 +24,7 @@ App.Views.Main = Backbone.View.extend({
 
     this.listenTo(this.collection, "sync", this.showVideos);
   },
+
   showVideos: function() {
     //go thru everything we receive from Instagram
     var hashtag = this.collection.hashtag;
@@ -34,9 +37,11 @@ App.Views.Main = Backbone.View.extend({
         this.renderVideo(data[i], hashtag);
       }
     }
+
     eventListeners();
     jQueryUi();
   },
+
   renderVideo: function(video, hashtag) {
 
     console.log(video);
