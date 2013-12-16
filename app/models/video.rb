@@ -13,8 +13,8 @@
 class Video < ActiveRecord::Base
   attr_accessible :compilation_id, :seq_id, :video_url
 
-  validates :compilation_id, presence: true
-  validates :video_url, presence: true
+  # validates :compilation_id, presence: true
+  # validates :video_url, presence: true
 
   belongs_to :compilation
 end
