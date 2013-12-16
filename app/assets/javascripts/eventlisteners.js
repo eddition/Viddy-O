@@ -36,6 +36,7 @@ function playSeq(){
       videoPlayer.play();
     } else {
       console.log('ended preview');
+      i = 0;
     }
   });
 
