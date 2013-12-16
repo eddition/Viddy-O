@@ -8,4 +8,4 @@ clear input form after submission
 
 Write a function to check if the video is already on the page
 
-e.stopPropagation?
+~~fix up the doubling up~~
