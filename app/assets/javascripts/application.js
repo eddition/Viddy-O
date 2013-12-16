@@ -17,6 +17,7 @@
 //= require handlebars
 //= require underscore
 //= require backbone
+//= require jqueryui
 //
 //= require setup
 //= require routes
@@ -26,3 +27,4 @@
 //= require_tree ./views
 //
 //= require app
+//= require eventlisteners

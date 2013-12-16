@@ -9,10 +9,15 @@
 </head>
 <body>
   <div class="row" id="header-div">
-    <div class="col-sm-2">
-      <h1 id="app-name">Viddy-O</h1>
+    <div class="col-md-2">
+      <a href="/" class="home-link">
+        <h1 id="app-name">Viddy-O</h1>
+      </a>
     </div>
   </div>
   <%= yield %>
+
+  <!-- import jQuery UI library -->
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 </body>
 </html>
