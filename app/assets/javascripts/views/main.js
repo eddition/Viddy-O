@@ -48,7 +48,9 @@ App.Views.Main = Backbone.View.extend({
     var imageUrl = video.attributes.images.standard_resolution.url;
     var videoUrl = video.attributes.videos.standard_resolution.url;
     //'<video width="320" height="240" controls><source src="' + url + '" type="video/mp4"></video>'
-    $( '#gallery' ).append( '<li video link="' + videoUrl + '"class="ui-widget-content ui-corner-tr"><img src="' + imageUrl + '" alt="The peaks of High Tatras" width="96" height="72"><a href="' + imageUrl  + '" title="View larger image" class="ui-icon ui-icon-zoomin">Preview</a><a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Sequence It</a></li>' );
+    $( '#gallery' ).append( '<li data-video_link="' + videoUrl + '"class="ui-widget-content ui-corner-tr"><img src="' + imageUrl + '" alt="The peaks of High Tatras" width="96" height="72"><a href="' + imageUrl  + '" title="View larger image" class="preview">Preview</a><a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Sequence It</a></li>' );
+
+    eventListeners();
 
     //add the functionality of the dynamic adding
       $(function() {
@@ -120,25 +122,25 @@ App.Views.Main = Backbone.View.extend({
       }
 
       // image preview function, demonstrating the ui.dialog used as a modal window
-      function viewLargerImage( $link ) {
-        var src = $link.attr( "href" ),
-          title = $link.siblings( "img" ).attr( "alt" ),
-          $modal = $( "img[src$='" + src + "']" );
+      // function viewLargerImage( $link ) {
+      //   var src = $link.attr( "href" ),
+      //     title = $link.siblings( "img" ).attr( "alt" ),
+      //     $modal = $( "img[src$='" + src + "']" );
 
-        if ( $modal.length ) {
-          $modal.dialog( "open" );
-        } else {
-          var img = $( "<img alt='" + title + "' width='384' height='288' style='display: none; padding: 8px;' />" )
-            .attr( "src", src ).appendTo( "body" );
-          setTimeout(function() {
-            img.dialog({
-              title: title,
-              width: 400,
-              modal: true
-            });
-          }, 1 );
-        }
-      }
+      //   if ( $modal.length ) {
+      //     $modal.dialog( "open" );
+      //   } else {
+      //     var img = $( "<img alt='" + title + "' width='384' height='288' style='display: none; padding: 8px;' />" )
+      //       .attr( "src", src ).appendTo( "body" );
+      //     setTimeout(function() {
+      //       img.dialog({
+      //         title: title,
+      //         width: 400,
+      //         modal: true
+      //       });
+      //     }, 1 );
+      //   }
+      // }
 
       // resolve the icons behavior with event delegation
       $( "ul.gallery > li" ).click(function( event ) {
