@@ -16,6 +16,17 @@
 
 ~~get rid of the video bar on play~~
 
+~~fix the renaming in jQuery UI~~
+
+~~add # to the front of search field~~
+
 write basic tests with capybara
 
-add # to the front of search field
+FB login
+
+save sequence
+
+when sequence ends, say: directed by _______(user's name)
+
+share on FB
+
