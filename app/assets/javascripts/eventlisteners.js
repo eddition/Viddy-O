@@ -1,6 +1,10 @@
 function eventListeners() {
   $('.preview').on('click', playPreivew);
+
   $('#seq-button').on('click', playSeq);
+  //add and remove the control bar for seamless transitions
+  $('.video-player').on('mouseover', addControlBar);
+  $('.video-player').on('mouseout', removeControlBar);
 }
 
 function playPreivew(e){
@@ -38,4 +42,19 @@ function playSeq(){
   });
   i = 0;
 }
+
+function addControlBar() {
+  $('.video-player').attr('controls', true);
+}
+
+function removeControlBar() {
+  $('.video-player').attr('controls', false);
+}
+
+
+
+
+
+
+
 
