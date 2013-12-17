@@ -14,7 +14,7 @@
 
 get rid of the video bar on play
 
-fix name double ups/names
+~~fix name double ups/names~~
 
 write basic tests with capybara
 
