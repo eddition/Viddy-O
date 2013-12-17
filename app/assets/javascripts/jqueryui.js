@@ -34,7 +34,7 @@ function jQueryUi() {
         });
 
         // image deletion function
-        var recycle_icon = "<a href='link/to/recycle/script/when/we/have/js/off' title='Recycle this image' class='ui-icon ui-icon-refresh'>Recycle image</a>";
+        var recycle_icon = "<a href='link/to/recycle/script/when/we/have/js/off' title='Recycle this image' class='ui-icon ui-icon-refresh'>Nope</a>";
         function deleteImage( $item ) {
           $item.fadeOut(function() {
             var $list = $( "ul", $trash ).length ?
@@ -52,7 +52,7 @@ function jQueryUi() {
         }
 
         // image recycle function
-        var trash_icon = "<a href='link/to/trash/script/when/we/have/js/off' title='Delete this image' class='ui-icon ui-icon-trash'>Delete image</a>";
+        var trash_icon = "<a href='link/to/trash/script/when/we/have/js/off' title='Delete this image' class='ui-icon ui-icon-trash'>Sequence</a>";
         function recycleImage( $item ) {
           $item.fadeOut(function() {
             $item

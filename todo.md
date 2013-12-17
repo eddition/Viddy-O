@@ -16,7 +16,7 @@
 
 ~~get rid of the video bar on play~~
 
-fix the renaming in jQuery UI
+~~fix the renaming in jQuery UI~~
 
 write basic tests with capybara
 
