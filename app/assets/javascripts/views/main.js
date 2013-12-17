@@ -22,7 +22,6 @@ App.Views.Main = Backbone.View.extend({
     }else{
       hashtag = $('#search-input').val();
     }
-    // debugger
     $('#search-input').val('#');
     // add video collection
     this.collection = new Videos( {hashtag: hashtag} );
