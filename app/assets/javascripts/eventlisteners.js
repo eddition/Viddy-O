@@ -34,10 +34,8 @@ function playSeq(){
       videoPlayer.src = videoLinks[i];
       videoPlayer.load();
       videoPlayer.play();
-    } else {
-      console.log('ended preview');
     }
   });
   i = 0;
-
 }
+

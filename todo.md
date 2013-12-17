@@ -8,7 +8,11 @@
 
 ~~fix up the doubling up~~
 
-make sequence play
+~~make sequence play~~
+
+~~add an event listener to the load so it plays the video only if it's fully loaded~~
+
+get rid of the video bar on play
 
 fix name double ups/names
 
