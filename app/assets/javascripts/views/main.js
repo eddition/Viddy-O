@@ -14,11 +14,16 @@ App.Views.Main = Backbone.View.extend({
 
     e.preventDefault();
     console.log('searched videos');
-
-    //get the user input
-    var hashtag = $('#search-input').val();
-    //clear the form after submission
-    $('#search-input').val('');
+    var input = $('#search-input').val().split('');
+    var hashtag;
+    if(input[0] === '#'){
+      input.shift()
+      hashtag= input.join("")
+    }else{
+      hashtag = $('#search-input').val();
+    }
+    // debugger
+    $('#search-input').val('#');
     // add video collection
     this.collection = new Videos( {hashtag: hashtag} );
 
