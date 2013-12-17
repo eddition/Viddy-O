@@ -16,6 +16,8 @@
 
 ~~get rid of the video bar on play~~
 
+fix the renaming in jQuery UI
+
 write basic tests with capybara
 
 add # to the front of search field
