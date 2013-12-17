@@ -12,9 +12,9 @@
 
 ~~add an event listener to the load so it plays the video only if it's fully loaded~~
 
-get rid of the video bar on play
-
 ~~fix name double ups/names~~
+
+get rid of the video bar on play
 
 write basic tests with capybara
 
