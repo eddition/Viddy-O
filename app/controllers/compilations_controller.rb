@@ -1,6 +1,12 @@
 class CompilationsController < ApplicationController
 
   def index
+    comp = Compilation.find(params['id'])
+    if comp.videos.length > 0
+      render json: comp.videos
+    else
+      render nothing: true
+    end
   end
 
   def new

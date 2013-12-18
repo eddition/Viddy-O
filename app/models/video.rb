@@ -11,7 +11,7 @@
 #
 
 class Video < ActiveRecord::Base
-  attr_accessible :compilation_id, :seq_id, :video_url
+  attr_accessible :compilation_id, :seq_id, :video_url, :img_url
 
   # validates :compilation_id, presence: true
   # validates :video_url, presence: true
