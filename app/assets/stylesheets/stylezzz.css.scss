@@ -39,6 +39,7 @@ ul {
 
 video {
   background-color: $video-background;
+  // border: 1px solid $off-white;
 }
 
 button {
@@ -50,7 +51,8 @@ a {
 }
 
 #gallery {
-  overflow-y:auto;
+  background-color: $video-background;
+  overflow-y: auto;
   height: 500px;
   width: 100%;
   a {
@@ -61,6 +63,7 @@ a {
 
 
 #trash {
+  background-color: $video-background;
   height: 100px;
   width: 100%;
   overflow-x:auto;
@@ -124,12 +127,14 @@ a {
 
 .sequence-header {
   width: 100%;
-  padding: 0 5%;
   #sequence {
     margin-top: 2%;
     float: left;
   }
   button {
+    float: right;
+    clear: none;
+    margin-left: 2%;
   }
 }
 
