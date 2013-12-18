@@ -17,12 +17,14 @@ App.Views.Main = Backbone.View.extend({
     console.log('searched videos');
     var input = $('#search-input').val().split('');
     var hashtag;
+
     if(input[0] === '#'){
-      input.shift()
-      hashtag= input.join("")
+      input.shift();
+      hashtag= input.join("");
     }else{
       hashtag = $('#search-input').val();
     }
+
     $('#search-input').val('#');
     // add video collection
     this.collection = new Videos( {hashtag: hashtag} );
@@ -49,17 +51,6 @@ App.Views.Main = Backbone.View.extend({
 
   renderVideo: function(video, hashtag) {
 
-    // console.log(video);
-    // console.log(hashtag);
-
-    // <li class="ui-widget-content ui-corner-tr">
-    // <h5 class="ui-widget-header">High Tatras</h5>
-    // <img src="http://www.underconsideration.com/brandnew/archives/google_broken_image_06_bliss.gif" alt="The peaks of High Tatras" width="96" height="72">
-    // <a href="images/high_tatras.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
-    // <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Sequence It</a>
-    // </li>
-
-    // debugger;
     var imageUrl = video.attributes.images.standard_resolution.url;
     var videoUrl = video.attributes.videos.standard_resolution.url;
 

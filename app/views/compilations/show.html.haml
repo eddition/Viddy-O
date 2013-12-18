@@ -1,28 +1,26 @@
-#main.main
-  %form#search
-    %input#search-input{:name => "search", :value => '#'}
-    %button#search-button search
+#main.main.col-md-12
+  .col-md-1
+  #video-player-div.col-md-5
+    %video.video-player{width: "480", height:"480", controls: false}
+      %source.video-source{src: "", type: "video/mp4"}
+    %div#trash.ui-widget-content.ui-state-default
+      %h4#sequence.ui-widget-header Sequence
+      %button#seq-button.btn.btn-primary Play!
+      %button#save-compilation.btn.btn-success Save
 
-    #video-player-div
-      %video.video-player{width: "320", height:"240", controls: false}
-        %source.video-source{src: "", type: "video/mp4"}
-
+  .col-md-5
+    %form#search
+      %input#search-input{:name => "search", :value => '#'}
+      %button#search-button search
     #search-div.ui-widget.ui-helper-clearfix
       %h4 Searched Videos
       %ul#gallery.gallery.ui-helper-reset.ui-helper-clearfix
+  .col-md-1
+  / #trash.ui-widget-content.ui-state-default
+  /   %h4#sequence.ui-widget-header Sequence
+  /   %button#seq-button.btn.btn-primary Play!
+  /   %button#save-compilation.btn.btn-success Save
 
-  #trash.ui-widget-content.ui-state-default
-    %h4#sequence.ui-widget-header Sequence
-    %button#seq-button.btn.btn-primary Play!
-    %button#save-compilation.btn.btn-success Save
-
-    / <li class="ui-widget-content ui-corner-tr">
-    / /<h5 class="ui-widget-header">High Tatras</h5>
-    / <video width="96" height="72" controls>
-    / <source src="' + url + '" type="video/mp4">
-    / </video>
-    / <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Sequence It</a>
-    / </li>
 
 
 
