@@ -4,6 +4,7 @@ class CreateVideos < ActiveRecord::Migration
       t.integer :compilation_id
       t.integer :seq_id
       t.string :video_url
+      t.string :img_url
 
       t.timestamps
     end
