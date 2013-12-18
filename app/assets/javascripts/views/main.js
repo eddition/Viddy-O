@@ -1,7 +1,5 @@
 App.Views.Main = Backbone.View.extend({
-
   el: '#main',
-
   events: {
     'submit #search'          : 'findVideos',
     'click #save-compilation' : 'saveVideos'
@@ -12,12 +10,10 @@ App.Views.Main = Backbone.View.extend({
   },
 
   findVideos: function(e) {
-
     e.preventDefault();
     console.log('searched videos');
     var input = $('#search-input').val().split('');
     var hashtag;
-
     if(input[0] === '#'){
       input.shift();
       hashtag= input.join("");
@@ -36,7 +32,6 @@ App.Views.Main = Backbone.View.extend({
     //go thru everything we receive from Instagram
     var hashtag = this.collection.hashtag;
     var data = this.collection.models;
-
     for (var i = 0; i < data.length; i++ ){
       var type = data[i].attributes.type;
       //if the data type is a video, render it out
@@ -58,23 +53,26 @@ App.Views.Main = Backbone.View.extend({
   },
 
   saveVideos: function(){
-
+    var urlArray = document.URL.split('')
+    var reverseSlashIndex = urlArray.reverse().indexOf('/')
+    var slashIndex = urlArray.length - reverseSlashIndex
+    var compId = urlArray.reverse().slice(slashIndex, urlArray.length).join('');
     var sequence = $('#sequence-videos').children();
     sequence.each(function(i){
       var seq_id = i+1;
-      var compilation_id = document.URL[document.URL.length - 1];
+      var compilation_id = compId
       var video_url = $(sequence[i]).data('video_link');
       var newVideo = {video: {video_url: video_url,compilation_id: compilation_id, seq_id: seq_id }};
-    $.ajax({
-      type: 'POST',
-      url: '/videos',
-      data: newVideo,
-      dataType: 'json'
-    }).done(function(response){
-      console.log(response);
-    })
-  })
-}
+      $.ajax({
+        type: 'POST',
+        url: '/videos',
+        data: newVideo,
+        dataType: 'json'
+      }).done(function(response){
+        console.log(response);
+      });
+    });
+  }
 
 });
 
