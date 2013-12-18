@@ -1,18 +1,5 @@
 require 'spec_helper'
-#  _______  _______  _______  __   __  _     _  __   __  _______  ______
-# |       ||   _   ||       ||  | |  || | _ | ||  | |  ||   _   ||      |
-# |       ||  |_|  ||    _  ||  |_|  || || || ||  |_|  ||  |_|  ||___   |
-# |       ||       ||   |_| ||       ||       ||       ||       |  __|  |
-# |      _||       ||    ___||_     _||       ||       ||       | |_____|
-# |     |_ |   _   ||   |      |   |  |   _   ||   _   ||   _   |   __
-# |_______||__| |__||___|      |___|  |__| |__||__| |__||__| |__|  |__|
-# http://jnicklas.github.io/capybara/
-# (\~---.
-#  /   (\-`-/)
-# (      ' ' )
-#  \ (  \_Y_/\
-#   ""\ \___//
-#      `w   "
+
 describe "The Home Page" do
   before(:each) do
     visit '/'
@@ -44,4 +31,9 @@ describe "New Compilation Page", :js => true do
     fill_in 'search', :with => 'video'
     expect(page).to have_css(".ui-widget-header")
   end
+
+  it "plays the video when you click preview"
+  it "adds a video to the sequence when you click sequence"
+  it "removes a video from the sequence when you click 'nope'"
+  it "saves the videos "
 end
