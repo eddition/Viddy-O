@@ -22,16 +22,13 @@ ul {
   display: inline-block;
 }
 
-#fb-login {
-  text-align: right;
-  font-weight: 900;
-  margin-top: 3em;
-  font-family: $font-hashtag;
-}
-
-ul#gallery {
+#gallery {
   overflow-y:auto;
   height: 500px;
+}
+
+video {
+  background-color: black;
 }
 
 #trash {
