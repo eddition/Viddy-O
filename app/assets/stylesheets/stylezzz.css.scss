@@ -58,6 +58,9 @@ a {
   a {
     float: none;
     display: block;
+    &:hover {
+      color: $header-color;
+    }
   }
 }
 
