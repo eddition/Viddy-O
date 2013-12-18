@@ -32,6 +32,6 @@ share on FB
 
 style!
 
-
+indicate which video is playing
 
 

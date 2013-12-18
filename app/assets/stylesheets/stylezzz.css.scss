@@ -22,9 +22,13 @@ ul {
   display: inline-block;
 }
 
-ul#gallery {
+#gallery {
   overflow-y:auto;
   height: 500px;
+}
+
+video {
+  background-color: black;
 }
 
 #trash {
