@@ -8,9 +8,9 @@ $button-background:   #FDFEFD;
 $button-font-color:   #333333;
 $off-white:           #FEFEFE;
 
-html {
-  overflow: hidden;
-}
+// html {
+//   overflow: hidden;
+// }
 
 body {
   font-family: $font;
@@ -29,6 +29,7 @@ h5 {
 
 li {
   list-style: none;
+  text-align: center;
 }
 
 ul {
@@ -51,6 +52,11 @@ a {
 #gallery {
   overflow-y:auto;
   height: 500px;
+  width: 100%;
+  a {
+    float: none;
+    display: block;
+  }
 }
 
 
@@ -105,15 +111,9 @@ a {
   }
 }
 
-@media (max-width: 1000px) {
-  html {
-    overflow: auto;
-  }
-}
-
 .buttons {
   clear: both;
-  background-color: $button-background;
+  background-color: $off-white;
   color: $button-font-color;
   width: 25%;
   &:hover {
@@ -122,3 +122,19 @@ a {
   }
 }
 
+.sequence-header {
+  width: 100%;
+  padding: 0 5%;
+  #sequence {
+    margin-top: 2%;
+    float: left;
+  }
+  button {
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    overflow: auto;
+  }
+}

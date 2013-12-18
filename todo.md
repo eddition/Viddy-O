@@ -24,9 +24,7 @@ write basic tests with capybara
 
 FB login
 
-save sequence
-
-when sequence ends, say: directed by _______(user's name)
+~~save sequence~~
 
 share on FB
 

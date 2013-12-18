@@ -4,5 +4,5 @@
   %p Viddy-O is a web app that allows users to search videos from instagram by hashtag, "stitch" them together and view the videos as one compiled video. Collaborate with friends to create video projects and share them with the world!
 
   = form_for :compilation, :url => {:controller => 'compilations', :action => 'create'}, :html => {:class => "create-compilation-form"} do |f|
-    = f.submit 'create a new compilation',:class => 'btn create-compilation-button', :id => 'compilation-button'
+    = f.submit 'create a new compilation',:class => 'btn create-compilation-button buttons', :id => 'compilation-button'
 
