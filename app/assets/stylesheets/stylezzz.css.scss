@@ -48,6 +48,9 @@ button {
 
 a {
   color: $font-color;
+  &:hover {
+      color: $header-color;
+  }
 }
 
 #gallery {
@@ -58,9 +61,6 @@ a {
   a {
     float: none;
     display: block;
-    &:hover {
-      color: $header-color;
-    }
   }
 }
 
