@@ -53,14 +53,14 @@ App.Views.Main = Backbone.View.extend({
   },
 
   saveVideos: function(){
-    var urlArray = document.URL.split('')
-    var reverseSlashIndex = urlArray.reverse().indexOf('/')
-    var slashIndex = urlArray.length - reverseSlashIndex
+    var urlArray = document.URL.split('');
+    var reverseSlashIndex = urlArray.reverse().indexOf('/');
+    var slashIndex = urlArray.length - reverseSlashIndex;
     var compId = urlArray.reverse().slice(slashIndex, urlArray.length).join('');
     var sequence = $('#sequence-videos').children();
     sequence.each(function(i){
       var seq_id = i+1;
-      var compilation_id = compId
+      var compilation_id = compId;
       var video_url = $(sequence[i]).data('video_link');
       var newVideo = {video: {video_url: video_url,compilation_id: compilation_id, seq_id: seq_id }};
       $.ajax({
@@ -73,6 +73,7 @@ App.Views.Main = Backbone.View.extend({
       });
     });
   }
+
 
 });
 

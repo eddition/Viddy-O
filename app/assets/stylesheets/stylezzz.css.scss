@@ -1,8 +1,19 @@
-$font: 'Varela Round', sans-serif;
-$font-hashtag: 'Nixie One', cursive;
+$font:                'Varela Round', sans-serif;
+$font-hashtag:        'Nixie One', cursive;
+$font-color:          #D0CECE;
+$header-color:        #DC4B65;
+$video-background:    #424651;
+$background-color:    #32363F;
+$button-background:   #FDFEFD;
+
+html {
+  overflow: hidden;
+}
 
 body {
   font-family: $font;
+  background-color: $background-color;
+  color: $font-color;
 }
 
 h3, h4 {
@@ -22,14 +33,19 @@ ul {
   display: inline-block;
 }
 
+video {
+  background-color: $video-background;
+}
+
+button {
+  background-color: $button-background;
+}
+
 #gallery {
   overflow-y:auto;
   height: 500px;
 }
 
-video {
-  background-color: black;
-}
 
 #trash {
   height: 100px;
@@ -46,13 +62,15 @@ video {
   width: 25%;
 }
 
-#header-div {
-  background-color: #FB9E2A;
+#header {
+  background-color: $background-color;
+  text-align: center;
+  margin-bottom: 3%;
 }
 
 #app-name {
   font-family: 'Gloria Hallelujah', cursive;
-  color: #4F96CE;
+  color: $header-color;
   text-align: center;
 }
 
@@ -75,3 +93,8 @@ video {
   }
 }
 
+@media (max-width: 1000px) {
+  html {
+    overflow: auto;
+  }
+}
