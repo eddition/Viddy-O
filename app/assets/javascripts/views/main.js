@@ -80,7 +80,7 @@ App.Views.Main = Backbone.View.extend({
         console.log(response);
       });
     });
-  },
+  }
 
   // renderSeq: function(){
   //   $.ajax({
