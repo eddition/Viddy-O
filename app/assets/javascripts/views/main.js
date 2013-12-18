@@ -71,7 +71,7 @@ App.Views.Main = Backbone.View.extend({
       data: newVideo,
       dataType: 'json'
     }).done(function(response){
-      console.log('saved');
+      console.log(response);
     })
   })
 }

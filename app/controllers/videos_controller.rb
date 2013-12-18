@@ -7,8 +7,13 @@ class VideosController < ApplicationController
   end
 
   def create
-    @new_video = Video.create(params['video'])
-    format.json { render json: @new_video, status: :created, location: @new_video }
+    video = Video.new(params['video'])
+
+    if video.save
+      render json: video
+    else
+      render status: :unprocessable_entity
+    end
   end
 
   def show
