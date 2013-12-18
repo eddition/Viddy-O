@@ -7,6 +7,16 @@ App.Views.Main = Backbone.View.extend({
 
   initialize: function() {
     console.log('view loaded');
+    var compilationId;
+    this.compId();
+    this.renderSeq();
+  },
+
+  compId: function(){
+    var urlArray = document.URL.split('');
+    var reverseSlashIndex = urlArray.reverse().indexOf('/');
+    var slashIndex = urlArray.length - reverseSlashIndex;
+    compilationId = urlArray.reverse().slice(slashIndex, urlArray.length).join('');
   },
 
   findVideos: function(e) {
@@ -24,7 +34,6 @@ App.Views.Main = Backbone.View.extend({
     $('#search-input').val('#');
     // add video collection
     this.collection = new Videos( {hashtag: hashtag} );
-
     this.listenTo(this.collection, "sync", this.showVideos);
   },
 
@@ -32,6 +41,10 @@ App.Views.Main = Backbone.View.extend({
     //go thru everything we receive from Instagram
     var hashtag = this.collection.hashtag;
     var data = this.collection.models;
+    var urlArray = document.URL.split('');
+    var reverseSlashIndex = urlArray.reverse().indexOf('/');
+    var slashIndex = urlArray.length - reverseSlashIndex;
+    var compId = urlArray.reverse().slice(slashIndex, urlArray.length).join('');
     for (var i = 0; i < data.length; i++ ){
       var type = data[i].attributes.type;
       //if the data type is a video, render it out
@@ -39,7 +52,6 @@ App.Views.Main = Backbone.View.extend({
         this.renderVideo(data[i], hashtag);
       }
     }
-
     eventListeners();
     jQueryUi();
   },
@@ -48,19 +60,14 @@ App.Views.Main = Backbone.View.extend({
 
     var imageUrl = video.attributes.images.standard_resolution.url;
     var videoUrl = video.attributes.videos.standard_resolution.url;
-
     $( '#gallery' ).append( '<li data-video_link="' + videoUrl + '"class="ui-widget-content ui-corner-tr"><h5 class="ui-widget-header">#' + hashtag + '</h5><img src="' + imageUrl + '" alt="The peaks of High Tatras" width="96" height="72"><a href="' + imageUrl  + '" title="View larger image" class="preview">Preview</a><a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Sequence</a></li>' );
   },
 
   saveVideos: function(){
-    var urlArray = document.URL.split('')
-    var reverseSlashIndex = urlArray.reverse().indexOf('/')
-    var slashIndex = urlArray.length - reverseSlashIndex
-    var compId = urlArray.reverse().slice(slashIndex, urlArray.length).join('');
     var sequence = $('#sequence-videos').children();
     sequence.each(function(i){
       var seq_id = i+1;
-      var compilation_id = compId
+      var compilation_id = compilationId;
       var video_url = $(sequence[i]).data('video_link');
       var newVideo = {video: {video_url: video_url,compilation_id: compilation_id, seq_id: seq_id }};
       $.ajax({
@@ -71,6 +78,17 @@ App.Views.Main = Backbone.View.extend({
       }).done(function(response){
         console.log(response);
       });
+    });
+  },
+
+  renderSeq: function(){
+    $.ajax({
+      type: 'GET',
+      url: '/compilations',
+      data: {id: compilationId},
+      dataType: 'json'
+    }).done(function(response){
+      console.log(response);
     });
   }
 

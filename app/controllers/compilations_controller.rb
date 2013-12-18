@@ -1,6 +1,13 @@
 class CompilationsController < ApplicationController
 
   def index
+    @comp = Compilation.find(params['id'])
+    binding.pry
+    if @comp.videos > 0
+      render json: @comp
+    else
+      render :nothing => true
+    end
   end
 
   def new
