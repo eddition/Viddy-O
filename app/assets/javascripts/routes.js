@@ -5,7 +5,6 @@ App.Router = Backbone.Router.extend({
   },
   initialize: function(){
     Backbone.history.start({ pushState: true });
-
   },
   index: function(){
     console.log('index');
