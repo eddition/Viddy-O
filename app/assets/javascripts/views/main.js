@@ -9,7 +9,7 @@ App.Views.Main = Backbone.View.extend({
     console.log('view loaded');
     var compilationId;
     this.compId();
-    this.renderSeq();
+    // this.renderSeq();
   },
 
   compId: function(){
@@ -81,20 +81,20 @@ App.Views.Main = Backbone.View.extend({
     });
   },
 
-  renderSeq: function(){
-    $.ajax({
-      type: 'GET',
-      url: '/compilations',
-      data: {id: compilationId},
-      dataType: 'json'
-    }).done(function(response){
-      $('#trash').append($('ul').attr({id: 'sequence-videos', class: 'gallery ui-helper-reset'}));
-      _.each(response, function(video){
-        console.log(video.video_url);
-        // $('#sequence-videos').append($('li').attr("data-video_link", video.video_url))
-      });
-    });
-  }
+  // renderSeq: function(){
+  //   $.ajax({
+  //     type: 'GET',
+  //     url: '/compilations',
+  //     data: {id: compilationId},
+  //     dataType: 'json'
+  //   }).done(function(response){
+  //     $('#trash').append($('ul').attr({id: 'sequence-videos', class: 'gallery ui-helper-reset'}));
+  //     _.each(response, function(video){
+  //       console.log(video.video_url);
+  //       // $('#sequence-videos').append($('li').attr("data-video_link", video.video_url))
+  //     });
+  //   });
+  // }
 
 
 });
