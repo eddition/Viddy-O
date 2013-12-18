@@ -49,7 +49,7 @@ App.Views.Main = Backbone.View.extend({
     var imageUrl = video.attributes.images.low_resolution.url;
     var videoUrl = video.attributes.videos.standard_resolution.url;
 
-    $( '#gallery' ).append( '<li data-video_link="' + videoUrl + '"class="ui-widget-content ui-corner-tr"><h5 class="ui-widget-header">#' + hashtag + '</h5><img src="' + imageUrl + '" alt="The peaks of High Tatras" width="96" height="72"><a href="' + imageUrl  + '" title="View larger image" class="preview">Preview</a><a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Sequence</a></li>' );
+    $( '#gallery' ).append( '<li data-video_link="' + videoUrl + '"class="ui-widget-content ui-corner-tr"><h5 class="ui-widget-header">#' + hashtag + '</h5><img src="' + imageUrl + '" alt="The peaks of High Tatras" width="96" height="72"><a href="' + imageUrl  + '" title="View larger image" class="preview">View</a><a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Sequence</a></li>' );
   },
 
   saveVideos: function(){

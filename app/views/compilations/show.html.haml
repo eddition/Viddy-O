@@ -10,9 +10,10 @@
     %video.video-player{width: "480", height:"480", controls: false}
       %source.video-source{src: "", type: "video/mp4"}
     %div#trash.ui-widget-content.ui-state-default
-      %h4#sequence.ui-widget-header Sequence
-      %button#seq-button.btn.buttons Play!
-      %button#save-compilation.btn.buttons Save
+      %div.sequence-header
+        %h4#sequence.ui-widget-header Sequence
+        %button#seq-button.btn.buttons Play!
+        %button#save-compilation.btn.buttons Save
 
   .col-md-5
     %form#search
