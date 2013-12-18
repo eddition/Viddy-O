@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ViddyO</title>
+  <title>Viddy-O</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -10,16 +10,7 @@
   <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div class="row" id="header-div">
-    <div class="col-md-2">
-      <a href="/" class="home-link">
-        <h1 id="app-name">Viddy-O</h1>
-      </a>
-    </div>
-    <div class="col-md-10">
-      <h6 id="fb-login">Login with Facebook</h6>
-    </div>
-  </div>
+
   <%= yield %>
 
   <!-- import jQuery UI library -->

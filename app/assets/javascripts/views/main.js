@@ -88,9 +88,14 @@ App.Views.Main = Backbone.View.extend({
       data: {id: compilationId},
       dataType: 'json'
     }).done(function(response){
-      console.log(response);
+      $('#trash').append($('ul').attr({id: 'sequence-videos', class: 'gallery ui-helper-reset'}));
+      _.each(response, function(video){
+        console.log(video.video_url);
+        // $('#sequence-videos').append($('li').attr("data-video_link", video.video_url))
+      });
     });
   }
+
 
 });
 

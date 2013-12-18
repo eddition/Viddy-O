@@ -1,17 +1,23 @@
 #main.main.col-md-12
+
+  #header
+    .col-md-1
+    %a.home-link{href:"/"}
+      %h1.app-name Viddy-O
+
   .col-md-1
   #video-player-div.col-md-5
     %video.video-player{width: "480", height:"480", controls: false}
       %source.video-source{src: "", type: "video/mp4"}
     %div#trash.ui-widget-content.ui-state-default
       %h4#sequence.ui-widget-header Sequence
-      %button#seq-button.btn.btn-primary Play!
-      %button#save-compilation.btn.btn-success Save
+      %button#seq-button.btn.buttons Play!
+      %button#save-compilation.btn.buttons Save
 
   .col-md-5
     %form#search
       %input#search-input{:name => "search", :value => '#'}
-      %button#search-button.btn search
+      %button#search-button.btn.buttons search
     #search-div.ui-widget.ui-helper-clearfix
       %h4 Searched Videos
       %ul#gallery.gallery.ui-helper-reset.ui-helper-clearfix
