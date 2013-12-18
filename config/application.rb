@@ -62,5 +62,8 @@ module ViddyO
     config.assets.initialize_on_precompile = false
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    #prevent caching
+    config.assets.cache_store = :null_store
+    config.sass.cache = false
   end
 end

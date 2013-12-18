@@ -13,8 +13,33 @@ h5 {
   font-family: $font-hashtag;
 }
 
+li {
+  list-style: none;
+}
+
+ul {
+  width: 100%;
+  display: inline-block;
+}
+
+ul#gallery {
+  overflow-y:auto;
+  height: 500px;
+}
+
+#trash {
+  height: 100px;
+  width: 100%;
+  overflow-x:auto;
+}
+
 #search-input {
   font-family: $font-hashtag;
+  width: 70%;
+}
+
+#search-button {
+  width: 25%;
 }
 
 #header-div {
