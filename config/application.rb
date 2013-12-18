@@ -64,6 +64,6 @@ module ViddyO
     config.assets.version = '1.0'
     #prevent caching
     config.assets.cache_store = :null_store
-    config.sass.cache = false
+    #config.sass.cache = false
   end
 end

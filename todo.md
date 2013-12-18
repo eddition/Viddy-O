@@ -32,4 +32,10 @@ style!
 
 indicate which video is playing
 
+add stamped font icon on the video player
+
+add key fram / https://daneden.me/animate/ / empty space in the search div
+
+
+
 

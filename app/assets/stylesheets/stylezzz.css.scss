@@ -39,6 +39,7 @@ ul {
 
 video {
   background-color: $video-background;
+  // border: 1px solid $off-white;
 }
 
 button {
@@ -47,10 +48,14 @@ button {
 
 a {
   color: $font-color;
+  &:hover {
+      color: $header-color;
+  }
 }
 
 #gallery {
-  overflow-y:auto;
+  background-color: $video-background;
+  overflow-y: auto;
   height: 500px;
   width: 100%;
   a {
@@ -61,10 +66,10 @@ a {
 
 
 #trash {
-  height: 100px;
+  background-color: $video-background;
   width: 100%;
-  overflow-x:auto;
   text-align: right;
+  margin-bottom: 5%;
 }
 
 #search-input {
@@ -78,10 +83,10 @@ a {
 
 #header {
   background-color: $background-color;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
   h1 {
     text-align: left;
-    margin-left: 12%;
+    margin-left: 10%;
   }
 }
 
@@ -124,13 +129,25 @@ a {
 
 .sequence-header {
   width: 100%;
-  padding: 0 5%;
   #sequence {
     margin-top: 2%;
     float: left;
   }
   button {
+    float: right;
+    clear: none;
+    margin-left: 2%;
   }
+}
+
+#search-holder {
+  button {
+    float: right;
+  }
+}
+
+#search {
+  margin-bottom: 1%;
 }
 
 @media (max-width: 1000px) {
