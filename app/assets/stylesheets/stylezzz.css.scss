@@ -1,10 +1,12 @@
 $font:                'Varela Round', sans-serif;
-$font-hashtag:        'Nixie One', cursive;
-$font-color:          #D0CECE;
-$header-color:        #DC4B65;
+$font-header:         'Gloria Hallelujah', cursive;
+$font-color:          #FEFEFE;
+$header-color:        #DD4D66;
 $video-background:    #424651;
 $background-color:    #32363F;
 $button-background:   #FDFEFD;
+$button-font-color:   #333333;
+$off-white:           #FEFEFE;
 
 html {
   overflow: hidden;
@@ -21,7 +23,8 @@ h3, h4 {
 }
 
 h5 {
-  font-family: $font-hashtag;
+  font-family: $font-header;
+  color: $header-color;
 }
 
 li {
@@ -41,6 +44,10 @@ button {
   background-color: $button-background;
 }
 
+a {
+  color: $font-color;
+}
+
 #gallery {
   overflow-y:auto;
   height: 500px;
@@ -51,10 +58,11 @@ button {
   height: 100px;
   width: 100%;
   overflow-x:auto;
+  text-align: right;
 }
 
 #search-input {
-  font-family: $font-hashtag;
+  font-family: $font-header;
   width: 70%;
 }
 
@@ -64,12 +72,15 @@ button {
 
 #header {
   background-color: $background-color;
-  text-align: center;
   margin-bottom: 3%;
+  h1 {
+    text-align: left;
+    margin-left: 12%;
+  }
 }
 
 #app-name {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: $font-header;
   color: $header-color;
   text-align: center;
 }
@@ -98,3 +109,15 @@ button {
     overflow: auto;
   }
 }
+
+.buttons {
+  clear: both;
+  background-color: $button-background;
+  color: $button-font-color;
+  width: 25%;
+  &:hover {
+    background-color: $video-background;
+    color: $off-white;
+  }
+}
+
