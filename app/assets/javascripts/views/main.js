@@ -30,7 +30,7 @@ App.Views.Main = Backbone.View.extend({
     var hashtag;
     if(input[0] === '#'){
       input.shift();
-      hashtag= input.join("");
+      hashtag = input.join("");
     }else{
       hashtag = $('#search-input').val();
     }
