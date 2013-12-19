@@ -30,23 +30,24 @@
 
 ~~The search box should be using the placeholder tag "Enter an instagram hashtag"~~
 
+~~round input corners~~
+
+~~show tv in front of video div~~
+
+~~add stamped font icon on the video player~~
+
 if nothing comes up, say try another hashtag
 
-round input corners
+Save (are you sure you want to save alert box)
 
-show tv in front of video div
-
-add stamped font icon on the video player
+If you navigate away from the page without saving then it should ask you sure in an alert box?
 
 share on FB
 
 style!
 
-Save (are you sure you want to save alert box)
-
 write basic tests with capybara
 
-If you navigate away from the page without saving then it should ask you sure in an alert box?
 
 
 

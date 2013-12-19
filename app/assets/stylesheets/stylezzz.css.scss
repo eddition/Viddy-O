@@ -50,6 +50,7 @@ ul {
 }
 
 video {
+  background-color: $video-background;
   // border: 1px solid $off-white;
 }
 
@@ -88,6 +89,7 @@ a {
   font-family: $font;
   width: 70%;
   padding: 5px;
+  border-radius: 4px;
 }
 
 #search-button {
@@ -167,6 +169,14 @@ a {
   padding: 0;
 }
 
+#tv-placeholder {
+  height: 100%;
+  width: 100%;
+  background-color: $background-color;
+  position: absolute;
+  z-index: 100;
+  padding: 120px 0;
+}
 
 @media (max-width: 1000px) {
   html {
