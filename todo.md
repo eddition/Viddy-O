@@ -30,6 +30,8 @@
 
 ~~The search box should be using the placeholder tag "Enter an instagram hashtag"~~
 
+if nothing comes up, say try another hashtag
+
 round input corners
 
 show tv in front of video div
