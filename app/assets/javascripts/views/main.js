@@ -35,7 +35,7 @@ App.Views.Main = Backbone.View.extend({
       hashtag = $('#search-input').val();
     }
 
-    $('#search-input').val('#');
+    $('#search-input').val();
     // add video collection
     this.collection = new Videos( {hashtag: hashtag} );
     this.listenTo(this.collection, "sync", this.showVideos);
