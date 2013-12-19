@@ -99,7 +99,7 @@ App.Views.Main = Backbone.View.extend({
       data: {id: compilationId},
       dataType: 'json'
     }).done(function(response){
-      $('#trash').append($("<ul class='gallery ui-helper-reset' id='sequence-videos'></ul>"))
+      $('#trash').append($("<ul class='gallery ui-helper-reset' id='sequence-videos'></ul>"));
       _.each(response, function(video){
         console.log(video.video_url);
         $('#sequence-videos').append($("<li data-video_link="+video.video_url+
