@@ -9,7 +9,7 @@ App.Views.Main = Backbone.View.extend({
     console.log('view loaded');
     var compilationId;
     this.compId();
-    // this.renderSeq();
+    this.renderSeq();
   },
 
   compId: function(){
@@ -90,25 +90,32 @@ App.Views.Main = Backbone.View.extend({
         console.log(response);
       });
     });
+  },
+
+  renderSeq: function(){
+    $.ajax({
+      type: 'GET',
+      url: '/compilations',
+      data: {id: compilationId},
+      dataType: 'json'
+    }).done(function(response){
+      $('#trash').append($("<ul class='gallery ui-helper-reset' id='sequence-videos'></ul>"))
+      _.each(response, function(video){
+        console.log(video.video_url);
+        $('#sequence-videos').append($("<li data-video_link="+video.video_url+
+          " data-img_link="+video.img_url+
+          " class='ui-widget-content ui-corner-tr ui-draggable' style='display: list-item; overflow: hidden; width: 48px;''><h5 class='ui-widget-header'></h5><img src="+video.img_url+
+          " alt='The peaks of High Tatras' width='96' height='72' style='display: inline-block; overflow: hidden; height: 36px;'><a href="+video.img_url+
+          " title='View larger image' class='preview'>View</a><a href='link/to/recycle/script/when/we/have/js/off' title='Recycle this image' class='ui-icon ui-icon-refresh'>Nope</a></li>")
+        );
+      });
+    });
   }
 
-  // renderSeq: function(){
-  //   $.ajax({
-  //     type: 'GET',
-  //     url: '/compilations',
-  //     data: {id: compilationId},
-  //     dataType: 'json'
-  //   }).done(function(response){
-  //     $('#trash').append($('ul').attr({id: 'sequence-videos', class: 'gallery ui-helper-reset'}));
-  //     _.each(response, function(video){
-  //       console.log(video.video_url);
-  //       $('#sequence-videos').append(<li data-video_link=" " data-img_link="http://distilleryimage5.s3.amazonaws.com/b1a7f8a0673411e386e80e4f1a9e4cfd_6.jpg" class="ui-widget-content ui-corner-tr ui-draggable" style="display: list-item; overflow: hidden; width: 48px;"><h5 class="ui-widget-header">#wdirandom</h5><img src="http://distilleryimage5.s3.amazonaws.com/b1a7f8a0673411e386e80e4f1a9e4cfd_6.jpg" alt="The peaks of High Tatras" width="96" height="72" style="display: inline-block; overflow: hidden; height: 36px;"><a href="http://distilleryimage5.s3.amazonaws.com/b1a7f8a0673411e386e80e4f1a9e4cfd_6.jpg" title="View larger image" class="preview">View</a><a href="link/to/recycle/script/when/we/have/js/off" title="Recycle this image" class="ui-icon ui-icon-refresh">Nope</a></li>)
-  //     });
-  //   });
-  // }
-
-
 });
+
+
+
 
 
 
