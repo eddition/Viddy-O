@@ -7,8 +7,8 @@
 
   .col-md-1
   #video-player-div.col-md-5
-    / .video-container.empty-state
-    /   %span.icon.icon-tv
+    .video-container.empty-state#tv-placeholder
+      %span.icon.icon-tv
     %video.video-player{width: "100%", height:"70%", controls: false}
       %source.video-source{src: "", type: "video/mp4"}
     %div

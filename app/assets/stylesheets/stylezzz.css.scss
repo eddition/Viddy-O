@@ -169,6 +169,14 @@ a {
   padding: 0;
 }
 
+#tv-placeholder {
+  height: 100%;
+  width: 100%;
+  background-color: $background-color;
+  position: absolute;
+  z-index: 100;
+  padding: 120px 0;
+}
 
 @media (max-width: 1000px) {
   html {

@@ -22,8 +22,10 @@ App.Views.Main = Backbone.View.extend({
   findVideos: function(e) {
     e.preventDefault();
 
-    //clear the bouncing search tag
+    // clear the bouncing search tag
     $('h2').remove();
+    // remove the tv placeholder
+    $('#tv-placeholder').remove();
 
     console.log('searched videos');
     var input = $('#search-input').val().split('');
@@ -99,7 +101,7 @@ App.Views.Main = Backbone.View.extend({
       data: {id: compilationId},
       dataType: 'json'
     }).done(function(response){
-      $('#trash').append($("<ul class='gallery ui-helper-reset' id='sequence-videos'></ul>"))
+      $('#trash').append($("<ul class='gallery ui-helper-reset' id='sequence-videos'></ul>"));
       _.each(response, function(video){
         console.log(video.video_url);
         $('#sequence-videos').append($("<li data-video_link="+video.video_url+

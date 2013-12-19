@@ -32,21 +32,22 @@
 
 ~~round input corners~~
 
+~~show tv in front of video div~~
+
+~~add stamped font icon on the video player~~
+
 if nothing comes up, say try another hashtag
 
-show tv in front of video div
+Save (are you sure you want to save alert box)
 
-add stamped font icon on the video player
+If you navigate away from the page without saving then it should ask you sure in an alert box?
 
 share on FB
 
 style!
 
-Save (are you sure you want to save alert box)
-
 write basic tests with capybara
 
-If you navigate away from the page without saving then it should ask you sure in an alert box?
 
 
 
