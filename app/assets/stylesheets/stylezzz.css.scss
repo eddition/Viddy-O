@@ -18,6 +18,18 @@ body {
   color: $font-color;
 }
 
+h2 {
+  margin-top: 10%;
+  font-family: $font-header;
+  font-size: 2em;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-duration: 2s;
+  -moz-animation-delay: 1s;
+  -moz-animation-iteration-count: infinite;
+}
+
 h3, h4 {
   font-family: $font;
 }
@@ -38,7 +50,6 @@ ul {
 }
 
 video {
-  background-color: $video-background;
   // border: 1px solid $off-white;
 }
 
@@ -70,11 +81,13 @@ a {
   width: 100%;
   text-align: right;
   margin-bottom: 5%;
+  min-height: 12em;
 }
 
 #search-input {
-  font-family: $font-header;
+  font-family: $font;
   width: 70%;
+  padding: 5px;
 }
 
 #search-button {
@@ -83,7 +96,7 @@ a {
 
 #header {
   background-color: $background-color;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   h1 {
     text-align: left;
     margin-left: 10%;
@@ -111,7 +124,7 @@ a {
     font-size: 3em;
   }
   p {
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     font-size: 1.5em;
   }
 }
@@ -122,7 +135,7 @@ a {
   color: $button-font-color;
   width: 25%;
   &:hover {
-    background-color: $video-background;
+    background-color: $header-color;
     color: $off-white;
   }
 }
@@ -149,6 +162,11 @@ a {
 #search {
   margin-bottom: 1%;
 }
+
+#tv {
+  padding: 0;
+}
+
 
 @media (max-width: 1000px) {
   html {

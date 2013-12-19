@@ -21,6 +21,10 @@ App.Views.Main = Backbone.View.extend({
 
   findVideos: function(e) {
     e.preventDefault();
+
+    //clear the bouncing search tag
+    $('h2').remove();
+
     console.log('searched videos');
     var input = $('#search-input').val().split('');
     var hashtag;
@@ -31,7 +35,7 @@ App.Views.Main = Backbone.View.extend({
       hashtag = $('#search-input').val();
     }
 
-    $('#search-input').val('#');
+    $('#search-input').val();
     // add video collection
     this.collection = new Videos( {hashtag: hashtag} );
     this.listenTo(this.collection, "sync", this.showVideos);
