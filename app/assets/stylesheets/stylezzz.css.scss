@@ -89,8 +89,9 @@ form {
 }
 
 #search-input {
-  font-family: $font-header;
+  font-family: $font;
   width: 70%;
+  padding: 5px;
 }
 
 #search-button {
@@ -138,7 +139,7 @@ form {
   color: $button-font-color;
   width: 25%;
   &:hover {
-    background-color: $video-background;
+    background-color: $header-color;
     color: $off-white;
   }
 }
@@ -169,7 +170,6 @@ form {
 #tv {
   padding: 0;
 }
-
 
 
 @media (max-width: 1000px) {
