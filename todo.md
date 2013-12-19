@@ -20,29 +20,25 @@
 
 ~~add # to the front of search field~~
 
-write basic tests with capybara
+~~Change bouncing search to "Search Instagram for a Hashtag"~~
 
-FB login
+~~Primary button color for the play button, red~~
+
+~~add key fram / https://daneden.me/animate/ / empty space in the search div~~
 
 ~~save sequence~~
+
+~~The search box should be using the placeholder tag "Enter an instagram hashtag"~~
+
+add stamped font icon on the video player
 
 share on FB
 
 style!
 
-indicate which video is playing
-
-add stamped font icon on the video player
-
-~~add key fram / https://daneden.me/animate/ / empty space in the search div~~
-
 Save (are you sure you want to save alert box)
 
-The search box should be using the placeholder tag "Enter an instagram hashtag"
-
-~~Change bouncing search to "Search Instagram for a Hashtag"~~
-
-Primary button color for the play button, red
+write basic tests with capybara
 
 If you navigate away from the page without saving then it should ask you sure in an alert box?
 
