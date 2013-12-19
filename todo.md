@@ -30,6 +30,10 @@
 
 ~~The search box should be using the placeholder tag "Enter an instagram hashtag"~~
 
+round input corners
+
+show tv in front of video div
+
 add stamped font icon on the video player
 
 share on FB

@@ -7,9 +7,9 @@
 
   .col-md-1
   #video-player-div.col-md-5
+    / .video-container.empty-state
+    /   %span.icon.icon-tv
     %video.video-player{width: "100%", height:"70%", controls: false}
-      .video-container.empty-state
-        %span.icon.icon-tv
       %source.video-source{src: "", type: "video/mp4"}
     %div
       %div.sequence-header
