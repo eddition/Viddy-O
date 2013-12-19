@@ -34,7 +34,19 @@ indicate which video is playing
 
 add stamped font icon on the video player
 
-add key fram / https://daneden.me/animate/ / empty space in the search div
+~~add key fram / https://daneden.me/animate/ / empty space in the search div~~
+
+Save (are you sure you want to save alert box)
+
+The search box should be using the placeholder tag "Enter an instagram hashtag"
+
+~~Change bouncing search to "Search Instagram for a Hashtag"~~
+
+The play button
+
+Primary button clor for the play button, red
+
+If you navigate away from the page without saving then it should ask you sure in an alert box?
 
 
 

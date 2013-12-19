@@ -18,6 +18,18 @@ body {
   color: $font-color;
 }
 
+h2 {
+  margin-top: 10%;
+  font-family: $font-header;
+  font-size: 2em;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-duration: 2s;
+  -moz-animation-delay: 1s;
+  -moz-animation-iteration-count: infinite;
+}
+
 h3, h4 {
   font-family: $font;
 }
@@ -51,6 +63,10 @@ a {
   &:hover {
       color: $header-color;
   }
+}
+
+form {
+  margin-top: -3%;
 }
 
 #gallery {
@@ -111,7 +127,7 @@ a {
     font-size: 3em;
   }
   p {
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     font-size: 1.5em;
   }
 }
@@ -149,6 +165,12 @@ a {
 #search {
   margin-bottom: 1%;
 }
+
+#tv {
+  padding: 0;
+}
+
+
 
 @media (max-width: 1000px) {
   html {

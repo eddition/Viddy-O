@@ -21,6 +21,10 @@ App.Views.Main = Backbone.View.extend({
 
   findVideos: function(e) {
     e.preventDefault();
+
+    //clear the bouncing search tag
+    $('h2').remove();
+
     console.log('searched videos');
     var input = $('#search-input').val().split('');
     var hashtag;
