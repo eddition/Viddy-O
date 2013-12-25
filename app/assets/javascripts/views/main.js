@@ -77,6 +77,7 @@ App.Views.Main = Backbone.View.extend({
 
   saveVideos: function(){
     var sequence = $('#sequence-videos').children();
+
     sequence.each(function(i){
       var seq_id = i+1;
       var compilation_id = compilationId;

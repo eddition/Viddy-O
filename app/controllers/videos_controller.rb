@@ -8,6 +8,7 @@ class VideosController < ApplicationController
 
   def create
     video = Video.new(params['video'])
+    # binding.pry
     comp = Compilation.find(params['video']['compilation_id'])
     if video.save
       comp.videos << video
