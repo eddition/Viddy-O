@@ -112,6 +112,12 @@ App.Views.Main = Backbone.View.extend({
         );
       });
     });
+    //add controls
+    addControlBar();
+    //remove placeholder
+    $('#tv-placeholder').remove();
+    //play sequence
+    playSeq();
   }
 
 });
