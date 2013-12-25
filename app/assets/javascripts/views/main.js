@@ -111,13 +111,14 @@ App.Views.Main = Backbone.View.extend({
           " title='View larger image' class='preview'>View</a><a href='link/to/recycle/script/when/we/have/js/off' title='Recycle this image' class='ui-icon ui-icon-refresh'>Nope</a></li>")
         );
       });
+      //only run if compilation exists
+      //add controls
+      addControlBar();
+      //remove placeholder
+      $('#tv-placeholder').remove();
+      //play sequence
+      playSeq();
     });
-    //add controls
-    addControlBar();
-    //remove placeholder
-    $('#tv-placeholder').remove();
-    //play sequence
-    playSeq();
   }
 
 });

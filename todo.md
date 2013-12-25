@@ -36,7 +36,7 @@
 
 ~~add stamped font icon on the video player~~
 
-on load if compilation exists add the control bar addControlBar() and remove placeholder $('#tv-placeholder').remove();
+~~on load if compilation exists add the control bar addControlBar() and remove placeholder $('#tv-placeholder').remove();~~
 
 if nothing comes up, say try another hashtag
 
