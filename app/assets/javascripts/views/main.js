@@ -117,7 +117,10 @@ App.Views.Main = Backbone.View.extend({
       //remove placeholder
       $('#tv-placeholder').remove();
       //play sequence
-      playSeq();
+      // playSeq();
+      //load up jQuery
+      eventListeners();
+      jQueryUi();
     });
   }
 
