@@ -28,7 +28,7 @@ function playSeq(){
   var videoPlayer = $('video:first')[0];
   var i = 0;
   videoPlayer.src = videoLinks[i];
-  videoPlayer.load();
+  // videoPlayer.load();
   // debugger
   videoPlayer.play();
 
@@ -36,7 +36,7 @@ function playSeq(){
     ++i;
     if (i < videoLinks.length){
       videoPlayer.src = videoLinks[i];
-      videoPlayer.load();
+      // videoPlayer.load();
       videoPlayer.play();
     }
   });
