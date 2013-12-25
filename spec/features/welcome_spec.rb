@@ -32,6 +32,14 @@ describe "New Compilation Page", :js => true do
     expect(page).to have_css(".ui-widget-header")
   end
 
+end
+
+describe "Compilation page after search" do
+  before(:each) do
+    visit'/';
+    click_button("create a new compilation");
+    fill_in 'search', :with => 'video'
+  end
   it "plays the video when you click preview"
   it "adds a video to the sequence when you click sequence"
   it "removes a video from the sequence when you click 'nope'"
