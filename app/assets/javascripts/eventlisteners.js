@@ -28,15 +28,12 @@ function playSeq(){
   var videoPlayer = $('video:first')[0];
   var i = 0;
   videoPlayer.src = videoLinks[i];
-  // videoPlayer.load();
-  // debugger
   videoPlayer.play();
 
   $(videoPlayer).on('ended', function(){
     ++i;
     if (i < videoLinks.length){
       videoPlayer.src = videoLinks[i];
-      // videoPlayer.load();
       videoPlayer.play();
     }
   });
